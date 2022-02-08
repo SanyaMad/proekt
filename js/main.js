@@ -31,6 +31,7 @@ $(document).ready(function () {
     next.css('left', prev.width() + 10 + bullets.width() + 10)
     bullets.css('left', prev.width() + 10)
 
+ 
 
 $(document).on('keydown', function(e) {
     if (e.keyCode == 27)
@@ -42,8 +43,45 @@ var modalDialog = $('.modal__dialog')
         if(!modalDialog.is(e.target) && modalDialog.has(e.target).length === 0 ) {
             modal.removeClass('modal--visible')
         };
-    });  
+    }); 
+    
+    new WOW().init();
+
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            // compound rule
+            userEmail: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче двух букв",
+                maxlength: "Имя не длинее пятнадцати букв"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+              required: "обязательно укажите email",
+              email: "Введите в формате name@domain.com"
+            }
+          }
+    });
+
+    $('[type=tel]').mask('+7(000) 000 00-00'), {placeholder: "+7 (___)-___-__-__"};
+
 });
+
+
     
 
 
