@@ -863,6 +863,9 @@ img {
   text-align: center;
   max-width: 900px;
 }
+.types__views {
+  padding-bottom: 25.28rem;
+}
 
 .card__text {
   position: relative;
@@ -905,6 +908,12 @@ img {
   font-size: 1.42rem;
   line-height: 1.92rem;
   color: #363636;
+}
+.design__text--reviews {
+  max-width: 25.714rem;
+  margin: auto;
+  margin-top: 1.6rem;
+  margin-bottom: 2.71rem;
 }
 
 .modal {
@@ -1051,6 +1060,7 @@ img {
   max-width: 63.07rem;
   margin: auto;
   padding: 2.5rem;
+  margin-top: -18.5rem;
   margin-bottom: 3.714rem;
 }
 .footer__title {
@@ -1061,6 +1071,11 @@ img {
   text-align: center;
   margin-bottom: 3.214rem;
   margin-top: 0;
+}
+.footer__title--second {
+  color: #E3B873;
+  max-width: 42.07rem;
+  margin: auto;
 }
 .footer__form {
   display: -webkit-box;
@@ -1107,8 +1122,79 @@ img {
   background-color: #131313;
   padding: 4.285rem 0;
 }
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 1.85rem;
+  margin-bottom: 3.07rem;
+}
+.footer__icons--element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.57rem 0.57rem;
+  background-color: #E3B873;
+  border-radius: 50%;
+}
+.footer__icons--element:first-child {
+  margin-right: 1.64rem;
+}
 .footer__map {
   margin-bottom: 4rem;
+}
+
+.review__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.review__name {
+  max-width: 14rem;
+  line-height: 1.64rem;
+  font-family: "Yeseva One", cursive;
+}
+.review__img {
+  border-radius: 50%;
+  margin-right: 1.64rem;
+}
+.review__text {
+  max-width: 23.14rem;
+  font-family: "Futura Book", sans-serif;
+  font-size: 1.07rem;
+  line-height: 180%;
+  color: #959595;
+  margin-bottom: 2.57rem;
+}
+.review__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.29rem;
+  font-family: "Yeseva One", cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 0.1rem 0.7rem;
+  margin-right: 1px;
+  -webkit-box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+          box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+.card__tag--img {
+  margin-right: 1.07rem;
 }
 
 @media screen and (max-width: 1200px) {
