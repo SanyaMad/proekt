@@ -1107,6 +1107,9 @@ img {
   background-color: #131313;
   padding: 4.285rem 0;
 }
+.footer__map {
+  margin-bottom: 4rem;
+}
 
 @media screen and (max-width: 1200px) {
   html {
