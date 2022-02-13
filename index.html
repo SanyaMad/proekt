@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.sass">
 </head>
 <body>
     <header class="header">
@@ -256,6 +257,76 @@
                 </div>
             </div>
         </section>
+        <section class="section parts">
+            <div class="container container__steps">
+            <div class="steps">
+                    <p class="steps__part steps__part_1">Наш специалист приедет для замеров в день контакта   или назначит удобную для вас дату</p>
+                    <p class="steps__part steps__part_2">Бесплатный замер</p>
+                    <p class="steps__part steps__part_3">Бесплатная консультация</p>
+                    <p class="steps__part steps__part_4">Получите смету расходов и сроки вашего будущего  ремонта
+                </p>
+            </div>
+            <div class="col form-parts">
+                <div class="parts-form">
+                    <h3 class="parts-form__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                    <form action="send.php" method="POST" class="form part__form">
+                        <div class="input-group modal__input-group">
+                            <label for="modal-user-name" class="label form__label label--light">Имя</label>
+                            <input type="text" name="userName" class="input from__input modal__input input--light" id="modal-user-name" placeholder="Как вас зовут:">
+                        </div>
+                        <div class="input-group modal__input-group">
+                            <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
+                            <input type="tel" name="userPhone" class="input from__input modal__input input--light" id="modal-user-phone" placeholder="Ваш телефон:">
+                        </div>
+                        <div class="input-group modal__input-group email_input">
+                            <label for="modal-user-email" class="label form__label label--light">Email</label>
+                            <input type="email" name="userEmail" class="input from__input modal__input input--light" id="modal-user-email" placeholder="Ваш email">
+                        </div>
+                        <div class="policy modal__policy">
+                            <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+                            <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                        </div>
+                        <button onclick="ym(87472899,'reachGoal','questionButton'); return true;"class="button button--primary">Вызвать замерщика</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="discount">
+            <div class="discount__content">
+                <img src="./img/disocunt.png" alt="Скидки" class="discounts__img">
+                <p class="discount__text">Это поможет сэкономить 10 - 20% от стоимости материалов</p>
+            </div>
+        </section>
+        <section class="section styles">
+            <div class="container styles__container">
+                <div class="styles__links">
+                    <h3 class="styles__title">Мы реализуем ваши самые смелые фантазии</h3>
+                    <div class="styles__list">
+                    <ul>
+                        <li class="styles__list--item">Американская классика</li>
+                        <li class="styles__list--item">Имперский стиль</li>
+                        <li class="styles__list--item">Классика</li>
+                        <li class="styles__list--item">Лофт</li>
+                        <li class="styles__list--item">Минимализм</li>
+                        <li class="styles__list--item">Прованс</li>
+                        <li class="styles__list--item">Романтизм</li>
+                        <li class="styles__list--item">Скандинавский стиль</li>
+                        <li class="styles__list--item">Средиземноморский стиль</li>
+                        <li class="styles__list--item">Хайтек</li>
+                        <li class="styles__list--item">Эклектизм</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="styles__img1">
+                    <img src="img/style-1.jpg" alt="imgeshka" class="styles__img_1">
+                    <img src="img/style-2.jpg" alt="imgeshka" class="styles__img_2">
+                </div>
+                <div class="styles__img2">
+                    <img src="img/style-3.jpg" alt="imgeshka" class="styles__img_3">
+                    <img src="img/style-4.jpg" alt="imgeshka" class="styles__img_4">
+                </div>
+            </div>
+        </section>
         <section class="section types">
             <div class="container">
                 <div class="section-title types__section-title animate__animated WOW animate__fadeInUp">
@@ -331,6 +402,67 @@
                         </div>
                     </div>
                 </div>
+            </div>  
+        </section>
+        <section class="section types">
+            <div class="container">
+                <div class="section-title types__section-title animate__animated WOW animate__fadeInUp">
+                    <h2 class="section-title__heading">Наша команда</h2>
+                    <div class="section-title__image">
+                        <img src="img/team.svg" alt="team">
+                    </div>
+                    <div class="types__text">
+                        <p class="design__text team__text__title">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+                    </div>
+                </div>
+                <div class="row team__row">
+                    <div class="col-30 team_card">
+                        <div class="card types__card">
+                            <img src="img/team_1.jpg" alt="team" class="card__image-design">
+                            <div class="team__text">
+                                <h3 class="team__title">Алексей Колмаков</h3>
+                                <p class="team__secondtext">Проектный менеджер</p>
+                                <strong class="team__pricetag">
+                                    опыт работы 8 лет
+                                </strong>
+                                <div class="team__icon">
+                                    <img class="img_team" src="img/idea.svg" alt="imegeshka">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30 team_card">
+                        <div class="card types__card">
+                            <img src="img/team_2.jpg" alt="team" class="card__image-design">
+                            <div class="team__text">
+                                <h3 class="team__title">Алиса Сухорукова</h3>
+                                <p class="team__secondtext">Дизайнер</p>
+                                <strong class="team__pricetag">
+                                    Опыт работы 6 лет
+                                </strong>
+                                <div class="team__icon">
+                                    <img class="img_team" src="img/pen.svg" alt="imegeshka">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30 team_card">
+                        <div class="card types__card">
+                            <img src="img/team_3.jpg" alt="team" class="card__image-design">
+                            <div class="team__text">
+                                <h3 class="team__title">Давид Волынев</h3>
+                                <p class="team__secondtext">Бригадир</p>
+                                <strong class="team__pricetag">
+                                    ОПыт работы 7 лет
+                                </strong>
+                                <div class="team__icon">
+                                    <img class="img_team" src="img/portfolio.svg" alt="imegeshka">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="team__down--text">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
             </div>  
         </section>
         <section class="section types types__views">
