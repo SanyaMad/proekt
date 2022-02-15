@@ -1331,35 +1331,35 @@ img {
   width: 100%;
 }
 
-.steps {
+.stepss {
   background: url(../img/parts.png) no-repeat left;
   min-height: 49rem;
   margin-right: 3.85rem;
   margin-left: -5rem;
 }
 
-.steps__part {
+.stepss__part {
   font-size: 1.286rem;
   line-height: 1.5rem;
   max-width: 26rem;
 }
 
-.steps__part_1 {
+.stepss__part_1 {
   padding-top: 6.6rem;
   margin-left: 29.5rem;
 }
 
-.steps__part_2 {
+.stepss__part_2 {
   margin-top: 5.8rem;
   margin-left: 35rem;
 }
 
-.steps__part_3 {
+.stepss__part_3 {
   margin-top: 10rem;
   margin-left: 36.5rem;
 }
 
-.steps__part_4 {
+.stepss__part_4 {
   max-width: 18.286rem;
   margin-top: 9rem;
   margin-left: 32rem;
@@ -1474,11 +1474,16 @@ ul {
   margin-top: 2.64rem;
 }
 
+.team__title__heading {
+  color: #fff;
+}
+
 .team__text__title {
   margin: auto;
   margin-top: 1.64rem;
   margin-bottom: 5.35rem;
   max-width: 32rem;
+  color: #fff;
 }
 
 .team__text {
@@ -1563,6 +1568,131 @@ ul {
   margin-bottom: 1.21rem;
 }
 
+.steps {
+  margin-top: -30.57rem;
+  padding-top: 30.57rem;
+  padding-bottom: 32.64rem;
+  margin-bottom: -32.64rem;
+}
+
+.steps .section-pretitle {
+  font-family: 'Futura Demi', cursive;
+  text-transform: uppercase;
+  font-size: 1.07rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.286px;
+}
+
+.steps .section-title__heading {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.steps .section-content {
+  margin-top: 6.571rem;
+  margin-right: 9.714rem;
+  margin-left: 0.1rem;
+}
+
+.steps .section-content__count {
+  font-family: 'Yeseva One';
+  text-transform: uppercase;
+  font-size: 1.286rem;
+  line-height: 1.786rem;
+}
+
+.steps .section-content__heading--primary {
+  font-family: 'Yeseva One',cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.07rem;
+  line-height: 1.642rem;
+  color: #E3B873;
+}
+
+.steps .section-content__word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps .swiper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -1.2rem;
+  margin-left: 0.1rem;
+}
+
+.steps-desc {
+  width: 9.71rem;
+  margin-right: 1.6rem;
+  margin-bottom: 2.57rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.steps-desc--chosen {
+  color: #fff;
+}
+
+.steps-desc__count {
+  position: relative;
+  font-family: 'Yeseva One',cursive;
+  font-size: 1.07rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.214rem;
+}
+
+.steps-desc__count::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 19px;
+  height: 1px;
+  background: rgba(227, 184, 115, 0.3);
+}
+
+.steps-desc__count--chosen::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 19px;
+  height: 1px;
+  background: #E3B873;
+}
+
+.steps-desc__text {
+  font-size: 1.07rem;
+  line-height: 1.29rem;
+}
+
+.steps .step-img {
+  width: 805px;
+  height: 421px;
+}
+
+.section-title__text_2 {
+  margin-bottom: 4.35rem;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px;
@@ -1642,6 +1772,147 @@ ul {
 
 @media screen and (max-width: 520px) {
   .hero__scroll-down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    margin-right: 0;
+    max-width: 32rem;
+  }
+  .hero {
+    max-width: 32rem;
+    padding-top: 0;
+    height: 55vh;
+    text-align: left;
+  }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem;
+  }
+  .hero__button2 {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem;
+  }
+  .projects .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .col-50 {
+    width: 100%;
+  }
+  .projects .section-title__word {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects .section-title__word::after {
+    display: none;
+  }
+  .projects .section-title__text {
+    max-width: 100%;
+  }
+  .projects .swiper-slide img {
+    margin-top: 5rem;
+  }
+  .control {
+    padding-bottom: 0;
+    background: #131313;
+  }
+  .control__text {
+    color: #fff;
+  }
+  .control__label {
+    color: #fff;
+  }
+  .control__input {
+    color: #fff;
+  }
+  .control__policy {
+    color: #fff;
+  }
+  .control__button {
+    margin-bottom: -2rem;
+  }
+  .control__video {
+    min-height: 20rem;
+  }
+  .control__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .control .input {
+    margin-bottom: 2rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .control .input:last-of-type {
+    margin-bottom: 0;
+  }
+  .control__policy-label {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 4.5rem;
+  }
+  .control__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .control__input-group {
+    margin-bottom: 2rem;
+  }
+  .parts {
+    display: none;
+  }
+  .styles {
+    display: none;
+  }
+  .types {
+    background: #131313;
+  }
+  .types__title {
+    color: #fff;
+  }
+  .types__text {
+    color: #fff;
+  }
+  .steps {
+    display: none;
+  }
+  .team__row {
+    margin-left: 0;
+  }
+  .team__secondtext {
+    margin: 0;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+  }
+  .team__text {
+    margin-left: 3rem;
+  }
+  .team__down--text {
+    display: none;
+  }
+  .types__views {
+    display: none;
+  }
+  .footer__wrap {
+    margin-top: -3rem;
+  }
+  .footer__menu {
     display: none;
   }
 }
